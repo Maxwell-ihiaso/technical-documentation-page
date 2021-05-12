@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 1rem;
+  background-color: rgba(128,128,128,0.1);
+
+}
+
+header#header {
+  padding: 0.5rem;;
+  text-align: center;
+}
+
+header#header h1 {
+  margin: 0.5rem;
+
+}
+
+main#main-doc {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+}
+
+nav.side-bar {
+  margin: 2rem;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: rgba(128,128,128,0.2);
+  border-radius: 0.5rem;
+}
+
+nav.side-bar h2,
+nav.side-bar a {
+  color: rgba(0,0,0,0.7);
+}
+
+nav.side-bar h2 {
+  text-align: center;
+  color: rgba(0,0,0,0.8);
+  font-family: 'Poppins', sans-serif;
+
+}
+
+nav.side-bar ol  {
+  padding: 1rem;
+}
+
+nav.side-bar ol li {
+  padding: 0.4rem;
+  font-family: 'Comfortaa', cursive;
+
+
+}
+
+.contents {
+  padding: 1rem 1.5rem;
+}
+
+
+.contents .main-section,
+.contents .main-section h2 {
+  margin-bottom: 1rem
+
+}
+
+.contents .main-section {
+  padding-top: 1rem;
+}
+
+.contents .main-section h2 {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.contents .main-section p {
+  margin: 0.5rem 0;
+  text-align: justify;
+
+}
+
+Footer {
+  padding: 1rem 0 2rem;
+  text-align: center;
+  margin: auto;
+}
+
+.main-section,
+Footer {
+  border-top: 1px solid rgba(128,128,129,0.1);
+
+}
+
+code {
+  background: rgba(128,128,128,0.3);
+  padding: 0.2rem 0.5rem;
+}
+
+
+@media screen and (min-width: 320px) {
+  nav.side-bar {
+    margin: 2rem 6rem 2rem 4rem;
+  }
+}
+
+    /* Small device */
+@media screen and (min-width: 576px) {
+  nav.side-bar {
+    margin-right: 8rem;
+  }
+
+}
+
+   /* Medium Devices */
+@media screen and (min-width: 768px) {
+  nav.side-bar {
+    margin: 0;
+    padding-top: 7rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(128,128,128,0.1);
+    border-radius: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:  30%;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  nav.side-bar ol li {
+    padding: 0.6rem 0.2rem;
+    list-style-type: circle;
+  }
+
+  .contents {
+    margin-left: 30%;
+  }
+}
+
+      /* Large Devices */
+@media screen and (min-width: 992px) {
+  body { font-size: 1.2rem;}
+
+}
