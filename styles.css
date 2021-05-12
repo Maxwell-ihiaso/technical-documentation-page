@@ -119,6 +119,10 @@ code {
 
    /* Medium Devices */
 @media screen and (min-width: 768px) {
+  header#header h1 {
+    padding-left: 30%;
+  }
+
   nav.side-bar {
     margin: 0;
     padding-top: 7rem;
@@ -142,6 +146,10 @@ code {
 
   .contents {
     margin-left: 30%;
+  }
+
+  Footer {
+    padding-left: 30%
   }
 }
 
